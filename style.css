@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Light & Dark Theme */
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+body.dark {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+/* Animation on page load */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animated box */
+#box {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  margin-top: 2rem;
+  transition: transform 0.5s ease;
+}
+
+#box.move {
+  transform: translateX(200px) rotate(45deg);
+}
